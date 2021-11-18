@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "bdcb65e0-3043-48e2-b927-49fcb7409a97",
+		"name": "parrot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "metadata",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/metadata?search=4269ea4a-f81f-44ff-a036-c5dd677ba53f,6cd07da2-2fe2-4a52-94dc-2e9a119eb8a9,e0ac4376-d19d-449b-a38e-13e86bf15fba",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"metadata"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "4269ea4a-f81f-44ff-a036-c5dd677ba53f,6cd07da2-2fe2-4a52-94dc-2e9a119eb8a9,e0ac4376-d19d-449b-a38e-13e86bf15fba"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/actuator/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actuator",
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
